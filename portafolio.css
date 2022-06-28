@@ -1,0 +1,108 @@
+/*ajustes generales*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none; /*elimino el subrayado*/
+    list-style: none; /*elimino los puntitos de la lista*/
+    box-sizing: border-box; /*para que los elementos no se salgan del contenedor*/
+}
+
+/*ajustes navegación*/
+nav{
+    background: lavender; 
+    height: 80px;
+    width: 100%;
+}
+/*ajustes de posición y padding de la imagen (logo)*/
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+/*ajustes tamaño de imagen*/
+.logo{
+    height: 40px;
+}
+nav ul{
+    float: right; /*posiciono lista de navegación a la derecha*/
+    margin-right: 20px; /*margen a la derecha*/
+}
+nav ul li{
+    display: inline-block; /*posiciono lista de navegación en una sola fila*/
+    /*para centrar verticalmente dentro del nav:*/
+    line-height: 80px; /*altura total del nav*/
+    margin: 0px 5px; /*margen a la dcha(5px) e izq(5px) de cada elemento de la lista. Le doy 0 por arriba y por abajo*/
+}
+/*enlaces del menú navegación*/
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #d41948;
+    transition: .5s;
+}
+/*icono menú navegación (solo visible en dispositivos móviles)*/
+.checkbtn{
+    font-size: 30px; /*le damos un tamaño*/
+    color: #fff;
+    float: right; /*posiciono a la derecha*/
+    line-height: 80px; /*centramos verticalmente respecto a nav*/
+    margin-right: 40px;
+    cursor: pointer; /*cuando paso el cursor aparece la manita para clickar*/
+    display: none; /*lo oculto (ordenadores y tablets)*/
+}
+#check{
+    display: none; /*oculto el checkbox del menú*/
+}
+section{
+    background: lavenderblush;
+    /*url(fondo.jpg) no-repeat;*/ 
+    background-size: cover;
+    background-position: center center; /*centro el fondo horizontal y verticalmente*/
+    height: calc(100vh - 80px); /*le doy una altura: toda la pantalla menos los 80 px del nav*/
+}
+
+/*RESPONSIVE DESIGN ipad*/
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px; /*modifico padding del logo*/
+    }
+    nav ul li a{
+        font-size: 16px; /*modifico tamaño de fuente en nav*/
+    }
+}
+
+/*RESPONSIVE DESIGN móvil*/
+@media (max-width: 858px){
+    .checkbtn{
+        display: block; /*mostrar el icono del menú*/
+    }
+    ul{
+        position: fixed;
+        width: 100%; /*que ocupe todo el ancho*/
+        height: 100vh; /*que ocupe todo el alto*/
+        background: lavender;
+        top: 80px; /*para que no tape el nav*/
+        left: -100%; /*para que no se vea a menos que clicke en el icono de menú*/
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0; /*margen de 50 px arriba y abajo*/
+        line-height: 30px; /*espacio entre elementos verticalmente*/
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #d41948;
+    }
+    #check:checked ~ ul{
+        left:0; /*cuando el check está activado muestra la lista ul*/
+    }
+}
