@@ -7,9 +7,13 @@
     box-sizing: border-box; /*para que los elementos no se salgan del contenedor*/
 }
 
+body {
+    cursor: url(cursor2.png), auto;
+ }
+
 /*ajustes navegación*/
 nav{
-    background: lavender; 
+    background: rgba(230, 230, 250, 0); 
     height: 80px;
     width: 100%;
     z-index: 1;
@@ -18,11 +22,32 @@ nav{
     
   
 }
+h2{
+    color:black;
+    font-family: helvetica;
+    font-size: 20pt;
+    font-weight:1000;
+    text-align: center;
+}
+h3{
+    color:rgba(255, 0, 38, 0.877);
+    font-family: helvetica;
+    font-size: 14pt;
+    font-weight:1000;
+    text-align: center;
+}
+h4{
+    color:black;
+    font-family: helvetica;
+    font-size: 12pt;
+    font-weight:600;
+    text-align: center;
+}
 /*ajustes de posición y padding de la imagen (logo)*/
 .enlace{
     position: absolute;
     padding: 20px 50px;
-    cursor: url(dedo.png), auto;
+    cursor: url(pointer2.png), auto;
 }
 /*ajustes tamaño de imagen*/
 .logo{
@@ -40,25 +65,27 @@ nav ul li{
 }
 /*enlaces del menú navegación*/
 nav ul li a{
-    color: #fff;
+    color: black;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    font-family: helvetica;
 }
 li a.active, li a:hover{
-    background: #d41948;
+    background: black;
+    color: white;
     transition: .5s;
-    cursor: url(dedo.png), auto;
+    cursor: url(pointer2.png), auto;
 }
 /*icono menú navegación (solo visible en dispositivos móviles)*/
 .checkbtn{
     font-size: 30px; /*le damos un tamaño*/
-    color: #fff;
+    color: black;
     float: right; /*posiciono a la derecha*/
     line-height: 80px; /*centramos verticalmente respecto a nav*/
     margin-right: 40px;
-    cursor: url(dedo.png), auto; /*cuando paso el cursor aparece la manita para clickar*/
+    cursor: url(pointer2.png), auto; /*cuando paso el cursor aparece la manita para clickar*/
     display: none; /*lo oculto (ordenadores y tablets)*/
 }
 #check{
@@ -66,7 +93,7 @@ li a.active, li a:hover{
 }
 section{
     margin-top:80px; /*para que al fijar el nav no se coma esos pixeles*/
-    background: lavenderblush;
+    background: white;
     /*url(fondo.jpg) no-repeat;
     background-size: cover;
     background-position: center center; /*centro el fondo horizontal y verticalmente*/
@@ -93,7 +120,7 @@ section{
         position: fixed;
         width: 100%; /*que ocupe todo el ancho*/
         height: 100vh; /*que ocupe todo el alto*/
-        background: lavender;
+        background: white;
         top: 80px; /*para que no tape el nav*/
         left: -100%; /*para que no se vea a menos que clicke en el icono de menú*/
         text-align: center;
@@ -110,16 +137,23 @@ section{
     }
     li a:hover, li a.active{
         background: none;
-        color: #d41948;
+        color: rgba(255, 0, 38, 0.877);
+        font-weight: 800;
     }
     #check:checked ~ ul{
         left:0; /*cuando el check está activado muestra la lista ul*/
      
     }
+    .parrafo{
+        margin: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 12pt;
+    }
 }
 
 #footer{
-    background-color:lavender;
+    background-color:black;
     height: 80px;
     width: 100%;
     /*font-family: ;*/
@@ -130,13 +164,9 @@ section{
 .copy{
     text-align:center;
     line-height: 80px;
- }
- .menu{
-    text-align:center;
-    padding-top: 3.5em;
-    color:#d41948;
     font-family: helvetica;
  }
+
  .texto{
     text-align:center;
     padding-top: 3.5em;
@@ -145,7 +175,7 @@ section{
  }
 
  .texto:hover{
-    cursor: url(dedo.png), auto;
+    cursor: url(pointer2.png), auto;
     font-weight: bold;
  }
 
@@ -168,7 +198,7 @@ section{
     font-family: helvetica;
  }
  .rrss:hover{
- cursor: url(dedo.png), auto;
+ cursor: url(pointer2.png), auto;
  }
 
  /*botón subir arriba*/
@@ -190,11 +220,11 @@ section{
     bottom: 20px;
     right: 20px;
     padding: 15px 20px;
-    background: #d41948;
+    background: rgba(255, 0, 38, 0.877);
     color: white;
-    border: 1px solid white;
+    border: 0px solid white;
     border-radius: 100%;
-    cursor: url(dedo.png), auto;
+    cursor: url(pointer2.png), auto;
     transform: translateY(100px);
     transition: 0.3s;
   }
@@ -203,6 +233,3 @@ section{
     transform: translateY(0);
   }
 
-  body {
-    cursor: url(flecha.png), auto;
- }
