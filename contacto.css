@@ -122,7 +122,7 @@ section{
         height: 100vh; /*que ocupe todo el alto*/
         background: white;
         top: 80px; /*para que no tape el nav*/
-        left: -100%; /*para que no se vea a menos que clicke en el icono de menú*/
+        left: 100%; /*para que no se vea a menos que clicke en el icono de menú*/
         text-align: center;
         transition: all .5s;
         z-index: 2;
