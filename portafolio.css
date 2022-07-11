@@ -137,7 +137,7 @@ section {
     min-height: calc(100vh -80px);
     /*url(fondo.jpg) no-repeat;
     background-size: cover;
-    background-position: center center; /*centro el fondo horizontal y verticalmente
+    background-position: center center; centro el fondo horizontal y verticalmente*/
     min-height: calc(100vh - 80px - 80px); /*le doy una altura: toda la pantalla menos los 80 px del nav -80px footer*/
 }
 
