@@ -97,7 +97,7 @@ section{
     /*url(fondo.jpg) no-repeat;
     background-size: cover;
     background-position: center center; /*centro el fondo horizontal y verticalmente*/
-    height: calc(100vh - 160px); /*le doy una altura: toda la pantalla menos los 80 px del nav*/
+    min-height: calc(100vh - 80px - 80px); /*le doy una altura: toda la pantalla menos los 80 px del nav y 80px footer*/
 }
 
 /*RESPONSIVE DESIGN ipad*/
@@ -107,6 +107,10 @@ section{
     }
     nav ul li a{
         font-size: 16px; /*modifico tamaño de fuente en nav*/
+    }
+    
+    section{
+        min-height: calc(100vh - 80px - 80px);
     }
 }
 
@@ -149,6 +153,9 @@ section{
         margin-left: 20px;
         margin-right: 20px;
         font-size: 12pt;
+    }
+        section{
+        min-height: calc(100vh - 80px - 80px);
     }
 }
 
