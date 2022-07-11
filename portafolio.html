@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portafolio</title>
+
+  <link rel="stylesheet" href="portafolio.css">
+  <!--menú:-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <!--estilo galería:-->
+  <link rel="stylesheet" href="galeriagridportfolio.css">
+  <!--botón subir arriba:-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="//alicialaborda.github.io/" class="enlace">
+      <img src="logo_.png" alt="nombre" class="logo">
+    </a>
+    <ul>
+      <li><a href="https://alicialaborda.github.io/">Inicio</a></li>
+      <li><a class="active" href="https://alicialaborda.github.io/portfolio/portafolio.html">Portfolio</a></li>
+      <li><a href="https://alicialaborda.github.io/portfolio/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+
+  <section>
+
+    <p class="menu">
+      <a class="activo" href="https://alicialaborda.github.io/portfolio">PROYECTOS</a> /
+      <a class="texto" href="https://alicialaborda.github.io/">DISEÑO DE PRODUCTO</a> ·
+      <a class="texto" href="https://alicialaborda.github.io/">PROGRAMACIÓN WEB</a> ·
+      <a class="texto" href="https://alicialaborda.github.io/">DISEÑO GRÁFICO</a> ·
+      <a class="texto" href="https://alicialaborda.github.io/">MARKETING DIGITAL</a>
+    </p>
+
+    <!--galería de proyectos:-->
+    <div class="grid-container">
+
+      <a id="link" href="https://www.behance.net/gallery/114176209/TERRAZZO-PIECES-JRR-Studio"
+        style="background-image: url('img/img10.JPG');" class="grid-item">
+        <div class="card-verde">
+          TERRAZZO PIECES</div>
+      </a>
+
+      <a id="link" href="https://www.behance.net/gallery/65943185/LILY-LAMP-Handmade-luminaire"
+        style="background-image: url('img/img2.jpg');" class="grid-item">
+        <div class="card-amarillo">
+          LILY LAMP</div>
+      </a>
+
+      <a id="link" href="https://www.behance.net/gallery/65945767/CALDER-CHAIR-Redesign-of-a-design-icon"
+        style="background-image: url('img/img3.jpg');" class="grid-item">
+        <div class="card-content">
+          CALDER CHAIR</div>
+      </a>
+
+      <a id="link" href="https://alicialaborda.github.io/portfolio/librorecetas.html"
+        style="background-image: url('img/img1.jpg');" class="grid-item">
+        <div class="card-rosa">
+          MARBLE RECIPES</div>
+      </a>
+
+      <a id="link" href="https://alicialaborda.github.io/portfolio/rentgo.html"
+        style="background-image: url('img/img7.jpg');" class="grid-item">
+        <div class="card-content">
+          RENT & GO</div>
+      </a>
+
+      <a id="link" href="https://alicialaborda.github.io/portfolio/fresh.html"
+        style="background-image: url('img/img4.PNG');" class="grid-item">
+        <div class="card-azul">
+          FRESH PURSE</div>
+      </a>
+
+      <a id="link" href="https://www.behance.net/gallery/62144313/FASHION-ACADEMY-EL-CORTE-INGLES-First-award"
+        style="background-image: url('img/img9.jpg');" class="grid-item">
+        <div class="card-rosa">
+          FASHION ACADEMY</div>
+      </a>
+
+      <a id="link" href="https://alicialaborda.github.io/portfolio/adrobal.html" class="grid-item" style="background-image: url('img/img13.jpg');
+        ">
+        <div class="card-verde">
+          ADROBAL</div>
+      </a>
+
+      <a id="link" href="" style="background-image: url('img/img5.png');" class="grid-item">
+        <div class="card-soon">
+          EN PROCESO</div>
+      </a>
+
+    </div>
+  </section>
+
+  <!--botón subir arriba-->
+  <button class="btn-scrolltop" id="btn_scrolltop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <script>
+    const btn_scrolltop = document.getElementById("btn_scrolltop")
+    btn_scrolltop.addEventListener('click', () => {
+      window.scrollTo(0, 0)
+    })
+
+    window.onscroll = () => {
+      add_btn_scrolltop()
+    }
+
+    const add_btn_scrolltop = () => {
+      if (window.scrollY < 300) {
+        btn_scrolltop.classList.remove("btn-scrolltop-on")
+      } else {
+        btn_scrolltop.classList.add("btn-scrolltop-on")
+      }
+    }
+
+  </script>
+
+  <!--footer-->
+  <footer id="footer">
+    <p class="copy"><small>Copyright &copy; 2022 Alicia Laborda</small></p>
+  </footer>
+  
+</body>
+
+</html>

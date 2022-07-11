@@ -1,108 +1,271 @@
 /*ajustes generales*/
-*{
+* {
     padding: 0;
     margin: 0;
-    text-decoration: none; /*elimino el subrayado*/
-    list-style: none; /*elimino los puntitos de la lista*/
-    box-sizing: border-box; /*para que los elementos no se salgan del contenedor*/
+    text-decoration: none;
+    /*elimino el subrayado*/
+    list-style: none;
+    /*elimino los puntitos de la lista*/
+    box-sizing: border-box;
+    /*para que los elementos no se salgan del contenedor*/
+}
+
+body {
+    cursor: url(cursor2.png), auto;
 }
 
 /*ajustes navegación*/
-nav{
-    background: lavender; 
+nav {
+    background: rgba(230, 230, 250, 0);
     height: 80px;
     width: 100%;
+    z-index: 1;
+    position: fixed;
+    /*fijo el menú de navegación*/
+    top: 0;
 }
+
 /*ajustes de posición y padding de la imagen (logo)*/
-.enlace{
+.enlace {
     position: absolute;
     padding: 20px 50px;
+    cursor: url(pointer2.png), auto;
 }
+
 /*ajustes tamaño de imagen*/
-.logo{
+.logo {
     height: 40px;
 }
-nav ul{
-    float: right; /*posiciono lista de navegación a la derecha*/
-    margin-right: 20px; /*margen a la derecha*/
+
+nav ul {
+    float: right;
+    /*posiciono lista de navegación a la derecha*/
+    margin-right: 20px;
+    /*margen a la derecha*/
 }
-nav ul li{
-    display: inline-block; /*posiciono lista de navegación en una sola fila*/
+
+nav ul li {
+    display: inline-block;
+    /*posiciono lista de navegación en una sola fila*/
     /*para centrar verticalmente dentro del nav:*/
-    line-height: 80px; /*altura total del nav*/
-    margin: 0px 5px; /*margen a la dcha(5px) e izq(5px) de cada elemento de la lista. Le doy 0 por arriba y por abajo*/
+    line-height: 80px;
+    /*altura total del nav*/
+    margin: 0px 5px;
+    /*margen a la dcha(5px) e izq(5px) de cada elemento de la lista. Le doy 0 por arriba y por abajo*/
 }
+
 /*enlaces del menú navegación*/
-nav ul li a{
-    color: #fff;
+nav ul li a {
+    color: black;
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    font-family: helvetica;
 }
-li a.active, li a:hover{
-    background: #d41948;
+
+li a.active,
+li a:hover {
+    background: black;
     transition: .5s;
+    cursor: url(pointer2.png), auto;
+    color: white;
 }
+
 /*icono menú navegación (solo visible en dispositivos móviles)*/
-.checkbtn{
-    font-size: 30px; /*le damos un tamaño*/
-    color: #fff;
-    float: right; /*posiciono a la derecha*/
-    line-height: 80px; /*centramos verticalmente respecto a nav*/
+.checkbtn {
+    font-size: 30px;
+    /*le damos un tamaño*/
+    color: black;
+    float: right;
+    /*posiciono a la derecha*/
+    line-height: 80px;
+    /*centramos verticalmente respecto a nav*/
     margin-right: 40px;
-    cursor: pointer; /*cuando paso el cursor aparece la manita para clickar*/
-    display: none; /*lo oculto (ordenadores y tablets)*/
+    cursor: url(dedo.png), auto;
+    /*cuando paso el cursor aparece la manita para clickar*/
+    display: none;
+    /*lo oculto (ordenadores y tablets)*/
 }
-#check{
-    display: none; /*oculto el checkbox del menú*/
+
+#check {
+    display: none;
+    /*oculto el checkbox del menú*/
 }
-section{
-    background: lavenderblush;
-    /*url(fondo.jpg) no-repeat;*/ 
+
+section {
+    margin-top: 80px;
+    /*para que al fijar el nav no se coma esos pixeles*/
+    background: white;
+    min-height: calc(100vh -80px);
+    /*url(fondo.jpg) no-repeat;
     background-size: cover;
-    background-position: center center; /*centro el fondo horizontal y verticalmente*/
-    height: calc(100vh - 80px); /*le doy una altura: toda la pantalla menos los 80 px del nav*/
+    background-position: center center; /*centro el fondo horizontal y verticalmente
+    height: calc(100vh - 160px); /*le doy una altura: toda la pantalla menos los 80 px del nav*/
+}
+
+.parrafo {
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    color: black;
+    font-family: helvetica;
+    font-weight: 600;
+    font-size: 14pt;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 /*RESPONSIVE DESIGN ipad*/
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px; /*modifico padding del logo*/
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+        /*modifico padding del logo*/
     }
-    nav ul li a{
-        font-size: 16px; /*modifico tamaño de fuente en nav*/
+
+    nav ul li a {
+        font-size: 16px;
+        /*modifico tamaño de fuente en nav*/
     }
 }
 
+
 /*RESPONSIVE DESIGN móvil*/
-@media (max-width: 858px){
-    .checkbtn{
-        display: block; /*mostrar el icono del menú*/
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        /*mostrar el icono del menú*/
     }
-    ul{
+
+    ul {
         position: fixed;
-        width: 100%; /*que ocupe todo el ancho*/
-        height: 100vh; /*que ocupe todo el alto*/
-        background: lavender;
-        top: 80px; /*para que no tape el nav*/
-        left: -100%; /*para que no se vea a menos que clicke en el icono de menú*/
+        width: 100%;
+        /*que ocupe todo el ancho*/
+        height: 100vh;
+        /*que ocupe todo el alto*/
+        background: white;
+        top: 80px;
+        /*para que no tape el nav*/
+        left: 100%;
+        /*para que no se vea a menos que clicke en el icono de menú*/
         text-align: center;
         transition: all .5s;
+        z-index: 2;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
-        margin: 50px 0; /*margen de 50 px arriba y abajo*/
-        line-height: 30px; /*espacio entre elementos verticalmente*/
+        margin: 50px 0;
+        /*margen de 50 px arriba y abajo*/
+        line-height: 30px;
+        /*espacio entre elementos verticalmente*/
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 20px;
     }
-    li a:hover, li a.active{
+
+    li a:hover,
+    li a.active {
         background: none;
-        color: #d41948;
+        color: rgba(255, 0, 38, 0.877);
+        font-weight: 800;
     }
-    #check:checked ~ ul{
-        left:0; /*cuando el check está activado muestra la lista ul*/
+
+    #check:checked~ul {
+        left: 0;
+        /*cuando el check está activado muestra la lista ul*/
+
     }
+
+    .parrafo {
+        margin: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 12pt;
+        text-align: justify;
+    }
+}
+
+#footer {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    /*font-family: ;*/
+    color: white;
+    padding: 10px, 30px, 10px, 30px;
+}
+
+.copy {
+    text-align: center;
+    line-height: 80px;
+    font-family: helvetica;
+}
+
+.menu {
+    text-align: center;
+    padding-top: 3.5em;
+    color: rgba(255, 0, 38, 0.877);
+    font-family: helvetica;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.texto {
+    text-align: center;
+    padding-top: 3.5em;
+    color: black;
+    font-family: helvetica;
+    font-weight: 800;
+    font-size: 14pt;
+}
+
+.texto:hover,
+.activo:hover {
+    cursor: url(pointer2.png), auto;
+    font-weight: 800;
+    color: rgba(255, 0, 38, 0.877);
+}
+
+.activo {
+    text-align: center;
+    padding-top: 3.5em;
+    font-family: helvetica;
+    font-weight: 800;
+    color: rgba(255, 0, 38, 0.877);
+    font-size: 14pt;
+}
+
+
+/*botón subir arriba*/
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.btn-scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: rgba(255, 0, 38, 0.877);
+    color: white;
+    border: 0px solid white;
+    border-radius: 100%;
+    cursor: url(pointer2.png), auto;
+    transform: translateY(100px);
+    transition: 0.3s;
+}
+
+.btn-scrolltop-on {
+    transform: translateY(0);
 }
