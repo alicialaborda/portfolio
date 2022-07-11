@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrobal identidad de marca</title>
+
+    <link rel="stylesheet" href="portafolio.css">
+    <!--menú:-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!--estilo galería:-->
+    <link rel="stylesheet" href="galeriagridportfolio.css">
+    <!--botón subir arriba:-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="//alicialaborda.github.io/" class="enlace">
+            <img src="logo_.png" alt="nombre" class="logo">
+        </a>
+        <ul>
+            <li><a href="https://alicialaborda.github.io/">Inicio</a></li>
+            <li><a class="active" href="https://alicialaborda.github.io/portfolio/portafolio.html">Portfolio</a></li>
+            <li><a href="https://alicialaborda.github.io/portfolio/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+
+        <p class="menu">
+        <a class="texto" href="https://alicialaborda.github.io/portfolio">PROYECTOS</a> / 
+        <a class="activo" href="https://alicialaborda.github.io/">DISEÑO DE PRODUCTO</a> ·  
+        <a class="texto" href="https://alicialaborda.github.io/">PROGRAMACIÓN WEB</a> · 
+        <a class="texto" href="https://alicialaborda.github.io/">DISEÑO GRÁFICO</a> · 
+        <a class="texto" href="https://alicialaborda.github.io/">MARKETING DIGITAL</a>
+        </p>
+<br><br>
+        <center>
+            <img 
+            src="img_porfolio/producto/prototipo1.jpg"
+            max width="80%"
+            alt="Pulsera candado"
+            tittle="Pulsera candado"
+            >
+            
+            <p><h1>RENT & GO</h1>
+
+                <h2>Caso</h2>
+                <h3>Rent & Go busca ofrecer un servicio de alquiler de mochilas de viaje y senderismo, cuyo objetivo es poner en movimiento productos que permanecen almacenados durante meses, y así evitar la compra de estos bienes por parte de usuarios que les van a dar un único uso o no quieren invertir tanto dinero en un producto que no amortizarán. </h3>
+                <h2>Solución</h2>
+                <h3>Se diseña una App en la que el usuario podrá crear un perfil, buscar el producto que necesita y seleccionar el más conveniente. 
+                Por último, escribir al propietario para acordar el método de entrega, pago y devolución del producto tras su uso.</h3>
+                <h2>Diseño UX · Diseño de producto </h2></p>
+                <br><br><br>
+            <img 
+            src="img_porfolio/producto/panel1.JPG"
+            max width="80%"
+            alt="Diseño de servicio"
+            tittle="Diseño de servicio"
+            >
+            <br><br><br>
+
+            <img 
+            src="img_porfolio/producto/prototipo2.jpg"
+            max width="80%"
+            alt="Pulsera candado"
+            tittle="Pulsera candado"
+            >
+            <br><br><br>
+
+            <img 
+            src="img_porfolio/producto/panel.JPG"
+            max width="80%"
+            alt="Diseño de producto"
+            tittle="Diseño de producto"
+            >
+            <br><br><br>
+
+            <img 
+            src="img_porfolio/producto/prototipo3.jpg"
+            max width="80%"
+            alt="Pulsera candado"
+            tittle="Pulsera candado"
+            >
+            <br><br><br>
+
+            <img 
+            src="img_porfolio/producto/prototipo4.jpg"
+            max width="80%"
+            alt="Pulsera candado"
+            tittle="Pulsera candado"
+            >
+            <br><br><br>
+
+            </center>
+
+    </section>
+   
+        <footer id="footer">
+        <p class="copy"><small>Copyright &copy; 2022 Alicia Laborda</small></p>
+        </footer>
+
+        <!--botón subir arriba-->
+        <button class="btn-scrolltop" id="btn_scrolltop">
+            <i class="fas fa-chevron-up"></i>
+          </button>
+          <script>
+            const btn_scrolltop = document.getElementById("btn_scrolltop")
+              btn_scrolltop.addEventListener('click', () => {
+                window.scrollTo(0, 0)
+              })
+        
+            window.onscroll = () => {
+              add_btn_scrolltop()
+            }
+        
+            const add_btn_scrolltop = () => {
+              if (window.scrollY < 300) {
+                btn_scrolltop.classList.remove("btn-scrolltop-on")
+              } else {
+                btn_scrolltop.classList.add("btn-scrolltop-on")
+              }
+            }
+        
+          </script>
+</body>
+</html>
