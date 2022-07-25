@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boda Almudeña e Íñigo</title>
+
+  <link rel="stylesheet" href="portafolio.css">
+  <!--menú:-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <!--botón subir arriba:-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="//alicialaborda.github.io/" class="enlace">
+      <img src="logo_.png" alt="nombre" class="logo">
+    </a>
+    <ul>
+      <li><a href="https://alicialaborda.github.io/">Inicio</a></li>
+      <li><a class="active" href="https://alicialaborda.github.io/portfolio/portafolio.html">Portfolio</a></li>
+      <li><a href="https://alicialaborda.github.io/portfolio/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <section>
+
+    <p class="menu">
+      <a class="texto" href="https://alicialaborda.github.io/portfolio">PROYECTOS</a> /
+      <a class="texto" href="https://alicialaborda.github.io/">DISEÑO DE PRODUCTO</a> ·
+      <a class="texto" href="https://alicialaborda.github.io/">PROGRAMACIÓN WEB</a> ·
+      <a class="activo" href="https://alicialaborda.github.io/">DISEÑO GRÁFICO</a> ·
+      <a class="texto" href="https://alicialaborda.github.io/">MARKETING DIGITAL</a>
+    </p>
+    <br><br>
+    <center>
+      
+      <p class="parrafo">Boda Almudena e Íñigo<br><br>
+
+        Caso<br>
+        Desarrollo de la identidad visual para una boda.<br>
+        <br>
+        Diseño Gráfico 
+      </p><br>
+      <br><br><br>
+      <img src="img_boda/ilustracion.jpg" max width="100%" alt="Ilustración boda" tittle="Ilustración boda">
+      <br><br><br>
+      <img src="img_boda/ilustracion_2.jpg" max width="100%" alt="Ilustración boda" tittle="Ilustración boda">
+      <br><br><br>
+      <img src="img_boda/finca.jpg" max width="50%" alt="Finca El Pendolero" tittle="Boda Almudena e Íñigo">
+      <br><br><br>
+    </center>
+    
+  </section>
+
+  <footer id="footer">
+    <p class="copy"><small>Copyright &copy; 2022 Alicia Laborda</small></p>
+  </footer>
+
+  <!--botón subir arriba-->
+  <button class="btn-scrolltop" id="btn_scrolltop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <script>
+    const btn_scrolltop = document.getElementById("btn_scrolltop")
+    btn_scrolltop.addEventListener('click', () => {
+      window.scrollTo(0, 0)
+    })
+
+    window.onscroll = () => {
+      add_btn_scrolltop()
+    }
+
+    const add_btn_scrolltop = () => {
+      if (window.scrollY < 300) {
+        btn_scrolltop.classList.remove("btn-scrolltop-on")
+      } else {
+        btn_scrolltop.classList.add("btn-scrolltop-on")
+      }
+    }
+
+  </script>
+</body>
+
+</html>
