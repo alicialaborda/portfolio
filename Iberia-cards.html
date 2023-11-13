@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adolfo Domínguez</title>
+  <link rel="shortcut icon" href="AL-Logo.png">
+
+  <link rel="stylesheet" href="portafolio.css">
+  <!--menú:-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <!--botón subir arriba:-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="//alicialaborda.github.io/" class="enlace">
+      <img src="logo_.png" alt="nombre" class="logo">
+    </a>
+    <ul>
+      <li><a href="https://alicialaborda.github.io/">Inicio</a></li>
+      <li><a class="active" href="https://alicialaborda.github.io/portfolio/portfolio.html">Portfolio</a></li>
+      <li><a href="https://alicialaborda.github.io/portfolio/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <section>
+
+    <p class="menu">
+      <a class="texto" href="https://alicialaborda.github.io/portfolio">PROYECTOS</a> /
+      <a class="texto" href="https://alicialaborda.github.io/portfolio/producto.html">DISEÑO DE PRODUCTO</a> ·
+      <a class="activo" href="https://alicialaborda.github.io/portfolio/web.html">PROGRAMACIÓN WEB</a> ·
+      <a class="texto" href="https://alicialaborda.github.io/portfolio/grafico.html">DISEÑO GRÁFICO</a> ·
+      <a class="texto" href="https://alicialaborda.github.io/portfolio">MARKETING DIGITAL</a>
+    </p>
+    <br><br>
+    <center>
+               <p><h1>ADOLFO DOMINGUEZ LANDING PAGE</h1>
+
+        <h2>Case</h2>
+         
+        <h3>Adolfo Domínguez needs to develop a process that allows to collect the consents of clients 
+        who purchase outside the ordinary registration process from the website and points of sale.
+      The purpose is to be able to incorporate the contact data of these clients into the Salesforce universe.
+The Marketing platform will be used to send these clients a communication by Email from which they can access a Landing in which they can inform the consents that Adolfo Domínguez wants to capture.
+Although the Landing will be implemented in Marketing Cloud, the purpose of the development is to update the consents in the customer file in CRM (Service Cloud).</h3>
+        
+        <h2>Solution</h2>
+         
+        <h3>The Landing implemented in Marketing Cloud will be prepared for multilanguage, for which a 'lg' parameter must be included that will support one of two values ​​(es|en) for Spanish and English, respectively. The multilingual will be implemented based on a translation table where all the literals and messages to be shown to the client based on the result of the processing, must be collected in the languages ​​for which the landing is intended.
+Additionally, the translation table will include the 'Campaign' field. This way it is possible to have a record for each language and campaign combination.
+The CloudPage will support a certain number of Boolean parameters that will allow you to determine which consents you want to display in the form.
+All processing of what to display and the update of attributes (consent/s and date/s) in the CRM will be developed using AMPScript code.</h3>
+        
+        <h2>Programación Web · Salesforce Marketing Cloud</h2>
+         
+      </p><br>
+
+      <br><br><br>
+      <img src="AD/ADSL_ES_WP.jpg" max width="100%" alt="Formulario Consentimiento WhatsApp" tittle="Consentimiento WhatsApp">
+      <br><br><br>
+       <img src="AD/ADSL_EN_G.jpg" max width="100%" alt="Formulario Informacion Cliente" tittle="Formulario Informacion Cliente">
+      <br><br><br>
+    </center>
+    
+  </section>
+
+  <footer id="footer">
+    <p class="copy"><small>&copy; Alicia Laborda 2023</small></p>
+  </footer>
+
+  <!--botón subir arriba-->
+  <button class="btn-scrolltop" id="btn_scrolltop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <script>
+    const btn_scrolltop = document.getElementById("btn_scrolltop")
+    btn_scrolltop.addEventListener('click', () => {
+      window.scrollTo(0, 0)
+    })
+
+    window.onscroll = () => {
+      add_btn_scrolltop()
+    }
+
+    const add_btn_scrolltop = () => {
+      if (window.scrollY < 300) {
+        btn_scrolltop.classList.remove("btn-scrolltop-on")
+      } else {
+        btn_scrolltop.classList.add("btn-scrolltop-on")
+      }
+    }
+
+  </script>
+</body>
+
+</html>
