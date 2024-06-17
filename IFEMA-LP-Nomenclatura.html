@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFEMA - Save the Date</title>
+  <link rel="shortcut icon" href="AL-Logo.png">
+
+  <link rel="stylesheet" href="portafolio.css">
+  <!--menú:-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <!--botón subir arriba:-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="//alicialaborda.github.io/" class="enlace">
+      <img src="logo_.png" alt="nombre" class="logo">
+    </a>
+    <ul>
+      <li><a href="https://alicialaborda.github.io/">Inicio</a></li>
+      <li><a class="active" href="https://alicialaborda.github.io/portfolio/portfolio.html">Portfolio</a></li>
+      <li><a href="https://alicialaborda.github.io/portfolio/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <section>
+
+    <p class="menu">
+      <a class="texto" href="https://alicialaborda.github.io/portfolio">PROYECTOS</a> /
+      <a class="texto" href="https://alicialaborda.github.io/portfolio/producto.html">DISEÑO DE PRODUCTO</a> ·
+      <a class="activo" href="https://alicialaborda.github.io/portfolio/web.html">PROGRAMACIÓN Y MKT CLOUD</a> ·
+      <a class="texto" href="https://alicialaborda.github.io/portfolio/grafico.html">DISEÑO GRÁFICO</a>
+    </p>
+    <br><br>
+    <center><div align="center" style="max-width:1280px;">
+ <p><h1>IFEMA LANDING PAGE</h1>
+
+        <h2>Case</h2>
+         
+        <h3>IFEMA Madrid needs to develop a process to generate the naming of communications for traking purposes. 
+    </h3>
+        
+        <h2>Solution</h2>
+         
+        <h3>
+The first CloudPage will identify the user inside SFMC, if it is not in the Data Base of users allowed to access the Landing Page, it will display a KO. If the person is in the Data Base 
+         it will display the second CloudPage to create the naming for the communication. Once the form is filled with all the informtion regarding the send, they will confirm and get the naming they will have to use for the communication.
+</h3>
+        
+        <h2>Programación Web · Salesforce Marketing Cloud</h2>
+         
+      </p><br>
+
+      <br><br><br>
+      <img src="IFEMA/LP-Nomenclatura-Login.png" max width="100%" alt="Landing Page Confirmation" tittle="Landing Page Confirmation">
+      <br><br><br>
+      <img src="IFEMA/SaveTheDateOK.png" max width="100%" alt="Landing Page Confirmation" tittle="Landing Page Confirmation">
+      <br><br><br>
+       <img src="IFEMA/SaveTheDateOK2.png" max width="100%" alt="Landing Page Confirmation" tittle="Landing Page Confirmation">
+      <br><br><br>
+       <img src="IFEMA/saveTheDateKO.png" max width="100%" alt="Landing Page Confirmation" tittle="Landing Page Confirmation">
+      <br><br><br>
+    </div></center>
+    
+  </section>
+
+  <footer id="footer">
+    <p class="copy"><small>&copy; Alicia Laborda <script type="text/javascript">document.write(new Date().getFullYear());</script></small></p>
+  </footer>
+
+  <!--botón subir arriba-->
+  <button class="btn-scrolltop" id="btn_scrolltop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <script>
+    const btn_scrolltop = document.getElementById("btn_scrolltop")
+    btn_scrolltop.addEventListener('click', () => {
+      window.scrollTo(0, 0)
+    })
+
+    window.onscroll = () => {
+      add_btn_scrolltop()
+    }
+
+    const add_btn_scrolltop = () => {
+      if (window.scrollY < 300) {
+        btn_scrolltop.classList.remove("btn-scrolltop-on")
+      } else {
+        btn_scrolltop.classList.add("btn-scrolltop-on")
+      }
+    }
+
+  </script>
+</body>
+
+</html>
