@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FA Sao Paulo</title>
+  <link rel="shortcut icon" href="AL-Logo.png">
+
+  <link rel="stylesheet" href="portafolio.css">
+  <!--menú:-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <!--botón subir arriba:-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="//alicialaborda.github.io/" class="enlace">
+      <img src="logo_.png" alt="nombre" class="logo">
+    </a>
+    <ul>
+      <li><a href="https://alicialaborda.github.io/">Inicio</a></li>
+      <li><a class="active" href="https://alicialaborda.github.io/portfolio/">Portfolio</a></li>
+      <li><a href="https://alicialaborda.github.io/portfolio/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <section>
+
+    <p class="menu">
+      <a class="texto" href="https://alicialaborda.github.io/portfolio">PROYECTOS</a> /
+      <a class="texto" href="https://alicialaborda.github.io/portfolio/producto.html">DISEÑO DE PRODUCTO</a> ·
+      <a class="activo" href="https://alicialaborda.github.io/portfolio/web.html">PROGRAMACIÓN Y MKT CLOUD</a> ·
+      <a class="texto" href="https://alicialaborda.github.io/portfolio/grafico.html">DISEÑO GRÁFICO</a>
+    </p>
+    <br><br>
+    <center><div align="center" style="max-width:1280px;">
+ <p><h1>FRUIT ATTRACTION SAO PAULO LANDING PAGE</h1>
+
+        <h2>Case</h2>
+         
+        <h3>Fruit Attraction Sao Paulo needs to develop a process that allows to collect consents for their new communications.
+      <br>The purpose is to convert as much contacts into subscribers as possible and to incorporate the data into the
+          Salesforce Marketing Cloud.
+<br>Fruit Attraction Sao Paulo will send an email that will include a subscribe button with ampscript code 
+  that will take the contact to the Landing Pages implemented in SFMC in order to save the information of the new subscriber.
+</h3>
+        
+        <h2>Solution</h2>
+         
+        <h3>All processing of what to display and the update of attributes (consent/s and date/s) will be developed 
+          using AMPScript code.</h3>
+        
+        <h2>Programación Web · Salesforce Marketing Cloud</h2>
+         
+      </p><br>
+
+      <br><br><br>
+      <img src="IFEMA/FA_SaoPaulo/Form_S.png" max width="100%" alt="FA Sao Paulo" tittle="FA Sao Paulo">
+      <br><br><br><br>
+             
+      <h2>Error Control</h2>
+        <h3>The URL will contain parameters from the email in order to identify the contact in la Landing Page.
+        If this data is not informed or is not in our data base, the landing page will display an error message.</h3><br>
+      <img style="border:solid;border-width:1px; border-color:lightgray;" src="IFEMA/FA_SaoPaulo/KO_Notfound.png.png" 
+        max width="80%" alt="Error Formulario" tittle="Error Formulario">
+      <br><br><br>
+
+          <h3>The form in the LP contains code to validate that the mandatory fields are completed.</h3><br>
+      <img style="border:solid;border-width:1px; border-color:lightgray;" src="IFEMA/FA_SaoPaulo/Form_S_validaciones.png" 
+        max width="80%" alt="Error Formulario" tittle="Error Formulario">
+      <br><br><br>
+
+      <h3>If the person has already completed the form, the landing page will display a "You have already filled
+        the form" error message.</h3><br>
+      <img style="border:solid;border-width:1px; border-color:lightgray;" src="IFEMA/FA_SaoPaulo/KO_Confirmed_S.png" 
+        max width="80%" alt="Error Formulario" tittle="Error Formulario">
+      <br><br><br>
+
+        <h2>Confirmation Landing Page</h2>
+      <br>
+      <img style="border:solid;border-width:1px; border-color:lightgray;" src="IFEMA/FA_SaoPaulo/Gracias_S_.png" 
+        max width="80%" alt="Confirmación Formulario" tittle="Confirmación Formulario">
+      <br><br><br>
+    </div></center>
+    
+  </section>
+
+  <footer id="footer">
+    <p class="copy"><small>&copy; Alicia Laborda <script type="text/javascript">document.write(new Date().getFullYear());</script></small></p>
+  </footer>
+
+  <!--botón subir arriba-->
+  <button class="btn-scrolltop" id="btn_scrolltop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <script>
+    const btn_scrolltop = document.getElementById("btn_scrolltop")
+    btn_scrolltop.addEventListener('click', () => {
+      window.scrollTo(0, 0)
+    })
+
+    window.onscroll = () => {
+      add_btn_scrolltop()
+    }
+
+    const add_btn_scrolltop = () => {
+      if (window.scrollY < 300) {
+        btn_scrolltop.classList.remove("btn-scrolltop-on")
+      } else {
+        btn_scrolltop.classList.add("btn-scrolltop-on")
+      }
+    }
+
+  </script>
+</body>
+
+</html>
