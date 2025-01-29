@@ -51,6 +51,18 @@ h3{
     margin-right: 150px;
 }
 
+span{
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    color: black;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 12pt;
+    margin: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
 /*ajustes navegación*/
 nav {
     background: rgba(230, 230, 250, 0);
